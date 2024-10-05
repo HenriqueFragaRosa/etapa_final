@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/linkazap.css">
+    <title>Cadastro de Contatos</title>
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Voltar</a>
+    <div class="container">
+        <h1>Cadastro de Contatos</h1>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Exemplo: João Silva" required>
+        
+        <label for="phone">Celular:</label>
+        <input type="tel" id="phone" placeholder="Exemplo: 11987654321" required>
+        
+        <button id="add-btn">Adicionar Contato</button>
+        
+        <h2>Contatos Cadastrados:</h2>
+        <ul id="contact-list"></ul>
+    </div>
+
+    <script src="../scripts/linkazap.js"></script>
+</body>
+</html>

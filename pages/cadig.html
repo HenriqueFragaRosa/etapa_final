@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadig.css">
+    <title>Cadastro de Empresas</title>
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Voltar</a>
+    <div class="container">
+        <h1>Cadastro de Empresas</h1>
+        <label for="company-name">Nome da Empresa:</label>
+        <input type="text" id="company-name" placeholder="Exemplo: Empresa XYZ" required>
+        
+        <label for="website">Site:</label>
+        <input type="url" id="website" placeholder="Exemplo: https://www.empresa.com" required>
+        
+        <label for="instagram">Instagram:</label>
+        <input type="url" id="instagram" placeholder="Exemplo: https://www.instagram.com/empresa" required>
+        
+        <button id="add-btn">Adicionar Empresa</button>
+        
+        <h2>Empresas Cadastradas:</h2>
+        <ul id="company-list"></ul>
+    </div>
+
+    <script src="../scripts/cadig.js"></script>
+</body>
+</html>
