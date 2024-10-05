@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Financiamento Veicular</title>
+    <link rel="stylesheet" href="../css/finance-veic.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Voltar</a>
+    <div class="container">
+        <h1>Calculadora de Financiamento Veicular</h1>
+        <form id="financingForm">
+            <label for="valorBem">Valor do Bem (R$):</label>
+            <input type="number" id="valorBem" placeholder="Ex: 50000" required>
+            
+            <label for="prazo">Prazo (meses):</label>
+            <input type="number" id="prazo" placeholder="Ex: 60" required>
+            
+            <label for="taxaJuros">Taxa de Juros (% ao mês):</label>
+            <input type="number" id="taxaJuros" step="0.01" placeholder="Ex: 1.5" required>
+            
+            <button type="button" onclick="calcularFinanciamento()">Calcular</button>
+        </form>
+        <div id="resultado">
+            <p>Valor da Parcela: <span id="parcela"></span></p>
+        </div>
+    </div>
+    <script src="../scripts/financeVeic.js"></script>
+</body>
+</html>

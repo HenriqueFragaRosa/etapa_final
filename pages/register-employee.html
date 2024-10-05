@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão de Funcionários</title>
+    <link rel="stylesheet" href="../css/register-employee.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Voltar</a>
+    <div class="container">
+        <h1>Inclusão de Funcionários</h1>
+        <form id="employeeForm">
+            <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="baseSalary">Salário Base (R$):</label>
+                <input type="number" id="baseSalary" required>
+            </div>
+            <div class="input-group">
+                <label for="hoursExtras">Horas Extras (R$):</label>
+                <input type="number" id="hoursExtras" required>
+            </div>
+            <div class="input-group">
+                <label for="insalubridade">Insalubridade (R$):</label>
+                <input type="number" id="insalubridade" required>
+            </div>
+            <div class="input-group">
+                <label for="periculosidade">Periculosidade (R$):</label>
+                <input type="number" id="periculosidade" required>
+            </div>
+            <div class="input-group">
+                <label for="inss">Deduções - INSS (R$):</label>
+                <input type="number" id="inss" required>
+            </div>
+            <div class="input-group">
+                <label for="irpf">Deduções - IRPF (R$):</label>
+                <input type="number" id="irpf" required>
+            </div>
+            <div class="input-group">
+                <label for="vt">Deduções - VT (R$):</label>
+                <input type="number" id="vt" required>
+            </div>
+            <button type="submit">Adicionar Funcionário</button>
+        </form>
+
+        <div class="table-wrapper">
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Salário Base (R$)</th>
+                        <th>Horas Extras (R$)</th>
+                        <th>Insalubridade (R$)</th>
+                        <th>Periculosidade (R$)</th>
+                        <th>INSS (R$)</th>
+                        <th>IRPF (R$)</th>
+                        <th>VT (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="totals">
+            <p>Total Salário Base: <span id="totalBaseSalary">0</span> R$</p>
+            <p>Total Horas Extras: <span id="totalHE">0</span> R$</p>
+            <p>Total Insalubridade: <span id="totalInsalubridade">0</span> R$</p>
+            <p>Total Periculosidade: <span id="totalPericulosidade">0</span> R$</p>
+            <p>Total INSS: <span id="totalINSS">0</span> R$</p>
+            <p>Total IRPF: <span id="totalIRPF">0</span> R$</p>
+            <p>Total VT: <span id="totalVT">0</span> R$</p>
+        </div>
+    </div>
+
+    <script src="../scripts/registerEmployee.js"></script>
+</body>
+</html>
